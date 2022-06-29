@@ -1,8 +1,6 @@
-let kalimat = 'katak';
+let kalimat = 'level';
 
-const reverseWord = (word) => {    
-    console.log(word.length);
-
+const reverseWord = (word) => { 
    const arrWord = word.split('');
 
    return arrWord.reverse().join('');
@@ -11,8 +9,10 @@ const reverseWord = (word) => {
 const checkPalindrome = () => {
     const balikKalimat = reverseWord(kalimat);
 
-    if(kalimat === balikKalimat) console.log('Ya');
-    else console.log('Bukan');
+    console.log(kalimat === balikKalimat);
+
+    if(kalimat === balikKalimat) console.log(`Kata/Kalimat ${kalimat}, adalah Palindrome`);
+    else console.log(`Kata/Kalimat ${kalimat}, bukan Palindrome`);
 }
 
 checkPalindrome();
