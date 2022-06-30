@@ -1,4 +1,4 @@
-let kalimat = 'level';
+const kalimat = 'level';
 
 const reverseWord = (word) => { 
    const arrWord = word.split('');
